@@ -22,9 +22,4 @@ public class DoorController : MonoBehaviour
         //SceneManager.LoadScene();
 
     }
-     public void OnAnimationComplete(Animator.)
-    {
-        // Code to change animator parameter
-        DoorAnim.SetBool("MyParameter", true);
-    }
 }
