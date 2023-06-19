@@ -2,9 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class asd : MonoBehaviour
+public class keycode1 : MonoBehaviour
 {
-    // Start is called before the first frame update
     Animator KeyAnim;
     Vector3 StartPosition;
     void Start()
@@ -20,6 +19,9 @@ public class asd : MonoBehaviour
     void OnTriggerEnter2D(){
         KeyAnim.SetBool("arda",true);
         Debug.Log("key çalıştı");
+    
 
     }
 }
+
+

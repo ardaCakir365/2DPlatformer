@@ -23,10 +23,11 @@ public class ChestKey : MonoBehaviour
     {
         
     }
-    void OnCollisionEnter2D(){
+    void OnTriggerEnter2D(){
 
         //ChestAnim.SetBool("KeyIsAnimating",true);
         ChestAnim.SetBool("ChestIsRunning",true);
+        Debug.Log("chestkey ontrigger worked");
       //  KeyAnim.SetBool("arda",true);
     }
 }
