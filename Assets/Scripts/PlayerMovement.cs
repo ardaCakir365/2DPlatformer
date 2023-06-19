@@ -9,7 +9,6 @@ public class PlayerMovement : MonoBehaviour
     public Rigidbody2D rb;
     private SpriteRenderer sprite;
     private Animator anim;
-
     private float dirX = 0f;
     [SerializeField] private float moveSpeed = 7f;
     [SerializeField] private float jumpForce = 14f;

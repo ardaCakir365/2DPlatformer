@@ -4,14 +4,17 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class Cheries : MonoBehaviour
+public class Collected : MonoBehaviour
 {
     int CheeryCount=0;
     int BananaCount=0;
+    int KeyCount;
 
     [SerializeField]
     public TextMeshProUGUI cherryText;
     public TextMeshProUGUI bananaText;
+
+    public TextMeshProUGUI keyText;
 
     // Start is called before the first frame update
     void Start(){
@@ -32,6 +35,13 @@ public class Cheries : MonoBehaviour
             bananaText.text = "banana "+ CheeryCount;
             BananaCount++;
             Destroy(collision.gameObject);
+        }
+            if(collision.gameObject.tag == "Key"){
+
+            Debug.Log("key toplandı");
+            keyText.text = "key "+ CheeryCount;
+            KeyCount++;
+            Destroy(collision.gameObject); 
         }
 
     }
