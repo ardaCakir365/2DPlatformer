@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GiveDamage : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class GiveDamage : MonoBehaviour
         if (collision.transform.CompareTag("Player"))
         {
             Destroy(collision.gameObject);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
 
