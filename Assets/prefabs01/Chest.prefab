@@ -7,10 +7,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1022110240008371160, guid: 39c259fc720524f18ac1ace65a4c99b2, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8198699593033696219, guid: 39c259fc720524f18ac1ace65a4c99b2, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -55,18 +51,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8198699593033696220, guid: 39c259fc720524f18ac1ace65a4c99b2, type: 3}
-      propertyPath: m_SortingLayer
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8198699593033696220, guid: 39c259fc720524f18ac1ace65a4c99b2, type: 3}
-      propertyPath: m_SortingLayerID
-      value: 1722581977
-      objectReference: {fileID: 0}
     - target: {fileID: 8198699593033696222, guid: 39c259fc720524f18ac1ace65a4c99b2, type: 3}
       propertyPath: m_Name
       value: Chest
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 4667285319643350276, guid: 39c259fc720524f18ac1ace65a4c99b2, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 39c259fc720524f18ac1ace65a4c99b2, type: 3}

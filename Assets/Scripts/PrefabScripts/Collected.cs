@@ -8,17 +8,22 @@ public class Collected : MonoBehaviour
 {
     int CheeryCount=0;
     int BananaCount=0;
+    int AnanasCount=0;
     int KeyCount;
 
     [SerializeField]
     public TextMeshProUGUI cherryText;
     public TextMeshProUGUI bananaText;
+    public TextMeshProUGUI AnanasText;
 
+
+    GameObject Object0,Object1,Object2;
     public TextMeshProUGUI keyText;
 
     // Start is called before the first frame update
     void Start(){
-      
+      Object0 = GameObject.FindGameObjectWithTag("CherryText");
+      Object1 = GameObject.FindGameObjectWithTag("AnanasText");
     }
 
     void OnCollisionEnter2D(Collision2D collision){
@@ -28,6 +33,8 @@ public class Collected : MonoBehaviour
             cherryText.text = "cheeries "+ CheeryCount;
             CheeryCount++;
             Destroy(collision.gameObject); 
+            cherryText=Object0.GetComponent<TextMeshProUGUI>();
+            cherryText.text =CheeryCount +"";
         }
         if(collision.gameObject.tag == "Banana"){
 
@@ -35,6 +42,14 @@ public class Collected : MonoBehaviour
             bananaText.text = "banana "+ CheeryCount;
             BananaCount++;
             Destroy(collision.gameObject);
+        }if(collision.gameObject.tag=="Ananas"){
+            Debug.Log("anans toplandı");
+            AnanasText=Object2.GetComponent<TextMeshProUGUI>();
+            AnanasText.text =AnanasCount+"";
+            
+            Destroy(collision.gameObject);
+
+
         }
             if(collision.gameObject.tag == "Key"){
 
