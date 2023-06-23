@@ -8,7 +8,13 @@ TagManager:
   - Traps
   - Banana
   - Pineapple
+<<<<<<< Updated upstream
   - Enemy
+=======
+  - BananaText
+  - AnanasText
+  - CherryText
+>>>>>>> Stashed changes
   layers:
   - Default
   - TransparentFX
@@ -17,7 +23,11 @@ TagManager:
   - Water
   - UI
   - Ground
+<<<<<<< Updated upstream
   - Enemy
+=======
+  - "u\u0131"
+>>>>>>> Stashed changes
   - 
   - 
   - 

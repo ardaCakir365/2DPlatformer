@@ -8,6 +8,7 @@ public class asd : MonoBehaviour
     Animator KeyAnim;
     Vector3 EndPosition;
     Renderer renderer;
+    Collider ab;
 
     void Start()
     {
@@ -19,11 +20,15 @@ public class asd : MonoBehaviour
 
     // Update is called once per frame
 
-    void OnTriggerEnter2D(){
+    void OnTriggerEnter2D(Collider2D other){
+        if(other.gameObject.tag=="Player"){
+            
         KeyAnim.SetBool("arda",true);
         Debug.Log("key çalıştı");
-        renderer.sortingOrder = 1;
-        transform.position = Vector3.MoveTowards(transform.position,EndPosition,5f);
+            renderer.sortingOrder = 1;
+            transform.position = Vector3.MoveTowards(transform.position,EndPosition,5f);
+        }
+        
 
     }
 }
