@@ -4,17 +4,11 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Cherry
   - Traps
-  - Banana
-  - Pineapple
-<<<<<<< Updated upstream
-  - Enemy
-=======
-  - BananaText
+  - Cherry
   - AnanasText
   - CherryText
->>>>>>> Stashed changes
+  - New tag
   layers:
   - Default
   - TransparentFX
@@ -22,12 +16,8 @@ TagManager:
   - 
   - Water
   - UI
-  - Ground
-<<<<<<< Updated upstream
-  - Enemy
-=======
-  - "u\u0131"
->>>>>>> Stashed changes
+  - 
+  - 
   - 
   - 
   - 
@@ -55,13 +45,4 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
-    locked: 0
-  - name: Sky
-    uniqueID: 2408980893
-    locked: 0
-  - name: Ground
-    uniqueID: 1722581977
-    locked: 0
-  - name: Platform
-    uniqueID: 2100233583
     locked: 0

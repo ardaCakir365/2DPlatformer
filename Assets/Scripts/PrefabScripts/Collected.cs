@@ -42,7 +42,8 @@ public class Collected : MonoBehaviour
             bananaText.text = "banana "+ CheeryCount;
             BananaCount++;
             Destroy(collision.gameObject);
-        }if(collision.gameObject.tag=="Ananas"){
+        }
+        if(collision.gameObject.tag=="Ananas"){
             Debug.Log("anans toplandı");
             AnanasText=Object2.GetComponent<TextMeshProUGUI>();
             AnanasText.text =AnanasCount+"";
