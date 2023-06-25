@@ -68,7 +68,7 @@ public class PlayerMovement : MonoBehaviour
 
      public void OnCollisionEnter2D(Collision2D collision){
 
-        if(collision.gameObject.layer==6){ //6 = ground
+        if(collision.gameObject.layer==6 || true){ //6 = ground
             Grounded=true;
             Debug.Log("+calisti");
     }
