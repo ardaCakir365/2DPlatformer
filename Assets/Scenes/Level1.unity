@@ -5058,7 +5058,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1870830694}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: f975af31670cd45ed94a18786293e4c8, type: 2}
   m_CullingMode: 0
@@ -5296,6 +5296,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 260941250010500602, guid: 566f95e4fabd34d9e9877159cf9f7c69, type: 3}
+      propertyPath: m_TagString
+      value: HealthBar
+      objectReference: {fileID: 0}
+    - target: {fileID: 1660735704166860211, guid: 566f95e4fabd34d9e9877159cf9f7c69, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 5253806856479571824, guid: 566f95e4fabd34d9e9877159cf9f7c69, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 22.18
@@ -5456,8 +5464,40 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 17
       objectReference: {fileID: 0}
+    - target: {fileID: 6481606468910693607, guid: 566f95e4fabd34d9e9877159cf9f7c69, type: 3}
+      propertyPath: m_Value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6481606468910693607, guid: 566f95e4fabd34d9e9877159cf9f7c69, type: 3}
+      propertyPath: m_MaxValue
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 6481606468910693607, guid: 566f95e4fabd34d9e9877159cf9f7c69, type: 3}
+      propertyPath: m_Direction
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7587737040250178855, guid: 566f95e4fabd34d9e9877159cf9f7c69, type: 3}
+      propertyPath: m_Color.b
+      value: 0.19134924
+      objectReference: {fileID: 0}
+    - target: {fileID: 7587737040250178855, guid: 566f95e4fabd34d9e9877159cf9f7c69, type: 3}
+      propertyPath: m_Color.g
+      value: 0.19134924
+      objectReference: {fileID: 0}
+    - target: {fileID: 7587737040250178855, guid: 566f95e4fabd34d9e9877159cf9f7c69, type: 3}
+      propertyPath: m_Color.r
+      value: 0.9433962
+      objectReference: {fileID: 0}
+    - target: {fileID: 7811794201258786892, guid: 566f95e4fabd34d9e9877159cf9f7c69, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7811794201258786892, guid: 566f95e4fabd34d9e9877159cf9f7c69, type: 3}
       propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7811794201258786892, guid: 566f95e4fabd34d9e9877159cf9f7c69, type: 3}
+      propertyPath: m_AnchorMin.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9077990115383243462, guid: 566f95e4fabd34d9e9877159cf9f7c69, type: 3}
@@ -5496,6 +5536,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HealthValue: 0
+  health: 100
   GameHealthBar: {fileID: 2026249537}
 --- !u!114 &2026249537 stripped
 MonoBehaviour:

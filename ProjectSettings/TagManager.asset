@@ -9,6 +9,7 @@ TagManager:
   - AnanasText
   - CherryText
   - New tag
+  - HealthBar
   layers:
   - Default
   - TransparentFX
