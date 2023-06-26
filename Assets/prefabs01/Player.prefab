@@ -178,6 +178,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cherryText: {fileID: 0}
   bananaText: {fileID: 0}
+  AnanasText: {fileID: 0}
   keyText: {fileID: 0}
 --- !u!114 &5620614327382165557
 MonoBehaviour:
@@ -191,3 +192,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cced05f72acf24fd192b3e0057c8ca94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  other: {fileID: 0}
+  damage: 0
+  gHealthBar: {fileID: 0}

@@ -5,12 +5,17 @@ using UnityEngine.SceneManagement;
 
 public class DoorController : MonoBehaviour
 {
-    public Animator DoorAnim,animator;    
+    private Animator DoorAnim,animator; 
+    public bool GotKey;   
+    //GameObject Key;
    void Start()
     {
         DoorAnim = GetComponent<Animator>();
         DoorAnim.SetBool("PlayerEntered",false);
         DoorAnim.SetBool("KeepIdle",false);
+       // Key = GameObject.FindWithTag("Key");
+       // DoorController asd = Key.GetComponent<DoorController>();
+
     }
         private bool IsAnimationPlaying(string animationName)
     {
@@ -29,8 +34,13 @@ public class DoorController : MonoBehaviour
     void OnTriggerEnter2D(Collider2D collision){
         DoorAnim.SetBool("PlayerEntered",true);
         DoorAnim.SetBool("KeepIdle",true);
-        int nextSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
-         SceneManager.LoadScene(nextSceneIndex); //bu kod geçicidir güncellenecek!!!
+        Debug.Log("OnTriggerEnter 1.asama methodu calisti");
+        if(this.tag =="Free" && collision.tag=="Player"){
+            int nextSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
+           SceneManager.LoadScene(nextSceneIndex); //bu kod geçicidir güncellenecek!!!
+           Debug.Log("OnTriggerEnter 2.asama Methodu Calisti");
+        }
+        
         
         //SceneManager.LoadScene();
 

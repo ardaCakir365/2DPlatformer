@@ -10,8 +10,12 @@ public class asd : MonoBehaviour
     Renderer rendererr;
     Collider ab;
 
+    [SerializeField]
+    GameObject DoorObject;
+    public bool gotkey;
+
     void Start()
-    {
+    {      
        KeyAnim = GetComponent<Animator>();
        KeyAnim.SetBool("arda",false);
        EndPosition = transform.position + new Vector3(0,0.10f,0); 
@@ -21,11 +25,15 @@ public class asd : MonoBehaviour
     // Update is called once per frame
 
     void OnTriggerEnter2D(Collider2D other){
+        DoorObject.tag ="Free";
         if(other.gameObject.tag=="Player"){
+        
         KeyAnim.SetBool("arda",true);
-        Debug.Log("key çalıştı");
+        Debug.Log("key çalıştı,anahtar toplandı");
             rendererr.sortingOrder = 1;
             transform.position = Vector3.MoveTowards(transform.position,EndPosition,5f);
+
+        
         }
         
 

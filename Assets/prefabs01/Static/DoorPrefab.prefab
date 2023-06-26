@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 3097704233085824142}
   m_Layer: 0
   m_Name: DoorPrefab
-  m_TagString: Untagged
+  m_TagString: Door
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -146,3 +146,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9826ab8698deef4ba80a9b8c691be4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  GotKey: 0
