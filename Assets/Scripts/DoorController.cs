@@ -29,6 +29,8 @@ public class DoorController : MonoBehaviour
     void OnTriggerEnter2D(Collider2D collision){
         DoorAnim.SetBool("PlayerEntered",true);
         DoorAnim.SetBool("KeepIdle",true);
+        int nextSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
+         SceneManager.LoadScene(nextSceneIndex); //bu kod geçicidir güncellenecek!!!
         
         //SceneManager.LoadScene();
 

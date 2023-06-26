@@ -16,7 +16,7 @@ public class HealthBar : MonoBehaviour
         GameHealthBar = GetComponent<Slider>();
         GameHealthBar.maxValue = 100;
         GameHealthBar.minValue = 0;
-        GameHealthBar.value =20f;
+        GameHealthBar.value =100f;
         
     }
     public void SetHealth(float health){
