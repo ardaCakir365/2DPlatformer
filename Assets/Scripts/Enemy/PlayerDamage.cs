@@ -46,7 +46,14 @@ public class PlayerDamage : MonoBehaviour
         if(lifes == 0)
         {
             deathEffect.SetActive(true);
-            sR.enabled = false; 
+            sR.enabled = false;
+            Invoke("EnemieDie", 0.2f);
         }
     }
+
+    public void EnemyDie()
+    {
+        Destroy(gameObject);
+    }
 }
+  
