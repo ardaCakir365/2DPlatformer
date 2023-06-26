@@ -10,8 +10,6 @@ TagManager:
   - CherryText
   - New tag
   - HealthBar
-  - Door
-  - Free
   layers:
   - Default
   - TransparentFX
