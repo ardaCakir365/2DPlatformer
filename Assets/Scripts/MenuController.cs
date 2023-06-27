@@ -21,9 +21,10 @@ public class MenuController : MonoBehaviour
         }
     }
 
-     public void PlayGame()
+    
+     public void PlayNewGame()
     {
-       LoadNextScene(); //returns next level
+       SceneManager.LoadScene(0); //returns next level
     }
 
     public void QuitGame()
@@ -41,8 +42,14 @@ public class MenuController : MonoBehaviour
         Time.timeScale = 1f; // Set time scale back to 1 to resume the game
         // You can also add other resume-related logic here
     }
-    public void RestatScene(){
+    public void RestatCurrentScene(){
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+    public void RestartLevelOne(){
+        SceneManager.LoadScene("level1");
+    }
+    public void RestartLevelTwo(){
+        SceneManager.LoadScene("level1");
     }
 }
 
