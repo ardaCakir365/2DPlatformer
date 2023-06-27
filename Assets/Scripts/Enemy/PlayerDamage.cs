@@ -10,7 +10,7 @@ public class PlayerDamage : MonoBehaviour
     private SpriteRenderer sR;
     public GameObject deathEffect;
 
-    public int lifes = 2;
+    public int lifes = 3;
     public float jumpForce = 2f;
 
     void Start()
@@ -50,7 +50,7 @@ public class PlayerDamage : MonoBehaviour
             Invoke("EnemieDie", 0.2f);
         }
     }
-
+    
     public void EnemyDie()
     {
         Destroy(gameObject);

@@ -9,8 +9,8 @@ public class GiveDamage : MonoBehaviour
     {
         if (collision.transform.CompareTag("Player"))
         {
-            Destroy(collision.gameObject);
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            
+            collision.transform.GetComponent<PlayerLife>().PlayerDamaged();
         }
     }
 
