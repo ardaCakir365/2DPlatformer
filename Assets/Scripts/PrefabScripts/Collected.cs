@@ -35,8 +35,10 @@ public class Collected : MonoBehaviour
             Destroy(collision.gameObject); 
             cherryText=Object0.GetComponent<TextMeshProUGUI>();
             cherryText.text =CheeryCount +"";
+            FindObjectOfType<LevelManager>().LevelCleared();
+
         }
-        if(collision.gameObject.tag == "Banana"){
+        if (collision.gameObject.tag == "Banana"){
 
             Debug.Log("Banana toplandı!");
             bananaText.text = "banana "+ CheeryCount;
