@@ -32,20 +32,21 @@ public class DoorController : MonoBehaviour
     // Update is called once per frame
 
     void OnTriggerEnter2D(Collider2D collision){
-        DoorAnim.SetBool("PlayerEntered",true);
-        DoorAnim.SetBool("KeepIdle",true);
+
         Debug.Log("OnTriggerEnter 1.asama methodu calisti");
         if(this.tag =="Free" && collision.tag=="Player"){
             int nextSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
            SceneManager.LoadScene(nextSceneIndex); //bu kod geçicidir güncellenecek!!!
            Debug.Log("OnTriggerEnter 2.asama Methodu Calisti");
+                   DoorAnim.SetBool("PlayerEntered",true);
+        DoorAnim.SetBool("KeepIdle",true);
         }
         
         
         //SceneManager.LoadScene();
 
     }
-    private void OnTriggerStay2D(Collider2D collision)
+/*    private void OnTriggerStay2D(Collider2D collision)
     {
         Debug.Log("onTriggerStay metodu çalışıyor");
         
@@ -56,6 +57,7 @@ public class DoorController : MonoBehaviour
             Debug.Log("New scene loaded! Scene index: " + nextSceneIndex);
         }
     }
+    */
     }
     
 

@@ -30,5 +30,20 @@ public class MenuController : MonoBehaviour
     {
         Application.Quit(); // Quit the game
     }
+        public void PauseGame()
+    {
+        Time.timeScale = 0f; // Set time scale to 0 to pause the game
+        // You can also add other pause-related logic here
+    }
+
+    public void ResumeGame()
+    {
+        Time.timeScale = 1f; // Set time scale back to 1 to resume the game
+        // You can also add other resume-related logic here
+    }
+    public void RestatScene(){
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
 }
+
 
