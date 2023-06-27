@@ -9,6 +9,7 @@ public class asd : MonoBehaviour
     Vector3 EndPosition;
     Renderer rendererr;
     Collider ab;
+    
 
     [SerializeField]
     GameObject DoorObject;
@@ -27,11 +28,11 @@ public class asd : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other){
         DoorObject.tag ="Free";
         if(other.gameObject.tag=="Player"){
-        
         KeyAnim.SetBool("arda",true);
         Debug.Log("key çalıştı,anahtar toplandı");
             rendererr.sortingOrder = 1;
             transform.position = Vector3.MoveTowards(transform.position,EndPosition,5f);
+        Destroy(this.gameObject);
 
         
         }
