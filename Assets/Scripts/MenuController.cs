@@ -24,7 +24,7 @@ public class MenuController : MonoBehaviour
     
      public void PlayNewGame()
     {
-       SceneManager.LoadScene(0); //returns next level
+       SceneManager.LoadScene(1); //returns next level
     }
 
     public void QuitGame()
