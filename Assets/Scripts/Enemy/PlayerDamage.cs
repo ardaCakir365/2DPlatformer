@@ -8,7 +8,7 @@ public class PlayerDamage : MonoBehaviour
     private Animator anim;
 
     private SpriteRenderer sR;
-    public GameObject deathEffect;
+    //public GameObject deathEffect;
 
     public int lifes = 3;
     public float jumpForce = 2f;
@@ -45,7 +45,7 @@ public class PlayerDamage : MonoBehaviour
     {
         if(lifes == 0)
         {
-            deathEffect.SetActive(true);
+            //deathEffect.SetActive(true);
             sR.enabled = false;
             Invoke("EnemieDie", 0.2f);
         }
