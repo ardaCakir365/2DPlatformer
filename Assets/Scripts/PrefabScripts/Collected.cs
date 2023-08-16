@@ -24,9 +24,12 @@ public class Collected : MonoBehaviour
     void Start(){
       Object0 = GameObject.FindGameObjectWithTag("CherryText");
       Object1 = GameObject.FindGameObjectWithTag("AnanasText");
+      //Object2 = GameObject.FindGameObjectWithTag("KeyText");
+
     }
 
     void OnCollisionEnter2D(Collision2D collision){
+
         if(collision.gameObject.tag == "Cherry"){
 
             Debug.Log("cherry toplandı");
@@ -55,10 +58,9 @@ public class Collected : MonoBehaviour
 
         }
             if(collision.gameObject.tag == "Key"){
-
+            
             Debug.Log("key toplandı");
-            keyText.text = "key "+ CheeryCount;
-            KeyCount++;
+            keyText.text = "1";
             Destroy(collision.gameObject); 
         }
 

@@ -12,6 +12,10 @@ public class PlayerMovement : MonoBehaviour
     private float dirX = 0f;
     [SerializeField] private float moveSpeed = 7f;
     [SerializeField] private float jumpForce = 14f;
+    float Currentspeed;
+    bool IsForceY;
+
+
 
 
     private enum MovementState { idle, running, jumping, falling }
@@ -29,19 +33,19 @@ public class PlayerMovement : MonoBehaviour
     public void Update()
     {
         dirX = Input.GetAxisRaw("Horizontal");
-        rb.velocity = new Vector2(dirX * moveSpeed, rb.velocity.y);
+        IsForceY = Input.GetButtonDown("Jump");
+        rb.velocity =new Vector2(dirX * moveSpeed, rb.velocity.y);
        
 
-        if (Input.GetButtonDown("Jump")&&Grounded)
+        if (IsForceY&&Grounded)
         {
-            rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+            rb.velocity = new Vector2(rb.velocity.x,jumpForce);
         }
-        float speed;
-        speed =rb.velocity.x;
-        if(speed<0){
+        Currentspeed =rb.velocity.x;
+        if(Currentspeed<0){
             sprite.flipX = true;
         }
-        if(speed>0){
+        if(Currentspeedspeed>0){
             sprite.flipX = false;
         }
         
